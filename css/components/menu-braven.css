@@ -1,3 +1,7 @@
+/*
+Propriedade que vai animar/esconder no menu: opacity e trasform pois usa GPU
+*/
+
 .menu-braven > .menu{
     display: block;
     height: 40px;
@@ -17,6 +21,13 @@
     background-color: var(--color-negative-light);
     padding: var(--spacing-container-top) var(--spacing-container-right) 
     var(--spacing-container-bottom) var(--spacing-container-left);
+    transform: translateX(100%);
+
+    transition: transform 200ms linear;
+}
+
+.menu-braven > .items.-active{
+    transform: translateX(0);
 }
 
 .menu-braven .close {
