@@ -29,3 +29,36 @@
     background-color: var(--color-zero-light);
     transform: scale(1.05);
 }
+
+.featured-braven > .title{
+    display: inline-block;
+    font-weight: 900px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: var(--color-first);
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    letter-spacing: 0.2em;
+}
+
+.featured-braven > .subtitle{
+    font-size: 1.7em;
+    font-weight: 900;
+    font-style: italic;
+    color: var(--color-second);
+    
+}
+
+.featured-braven > .subtitle > strong{
+    display: block;
+    font-style: normal;
+    font-size: 1.47em;
+    color: var(--color-first);
+}
+
+.featured-braven > .subtitle > small{
+    font-size: 1rem;
+    color: var(--color-first-light);
+    letter-spacing: 0.029em;
+    margin-left: var(--spacing-very-small);
+}
